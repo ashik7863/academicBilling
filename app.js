@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.static('public'));
 
 
-app.get('/t',(req,res)=>{
+app.get('/',(req,res)=>{
     res.send('Hello World2');
 })
 
