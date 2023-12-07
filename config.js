@@ -3,7 +3,7 @@ const mongoose=require('mongoose');
 
 const connectDB = async () => {
     try {
-      const conn = await mongoose.connect(`mongodb://localhost:27017/billingSoftware`, {
+      const conn = await mongoose.connect(`mongodb+srv://ashik123:7872145792@cluster0.iptlfq6.mongodb.net/academicbilling?retryWrites=true&w=majority`, {
         useNewUrlParser: true,
       });
       console.log(`MongoDB Connected: ${conn.connection.host}`);
